@@ -1,6 +1,4 @@
 require('rspec')
-require('pry')
-require('category')
 require('task')
 
 describe (Task) do
