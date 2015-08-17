@@ -46,6 +46,11 @@ describe('Category') do
 
   describe('.find') do
     it('finds the category by the id') do
+      new_cat = Category.new('school')
+      new_cat.save()
+      new_cat2 = Category.new('home')
+      new_cat2.save()
+      expect(Category.find(1)).to(eq(new_cat))
     end
   end
 end
